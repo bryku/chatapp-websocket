@@ -36,6 +36,7 @@ var message = {};
 		ws.send(msg);
 	}
 
+// Change for your use.
 var ws = new WebSocket('wss://chat-webapp.bryku.repl.co');
 	ws.addEventListener('open',(event)=>{
 		ws.send(':get_messages');
