@@ -1,0 +1,56 @@
+:root{
+	--mainground:#151515;
+	--background:#222831;
+	--foreground:#393E46;
+	--textcolor:#6c7683;
+	--linkcolor:#131313;
+	--primarycolor:#FFD369;
+	--secondarycolor:#ecc25f;
+	--pin-mod:#6bffb3;
+	--pin-status:#6b97ff;
+	--pin-warning:#ff6b6b;
+}
+body{
+	position: fixed; top: 0px; left: 0px;
+	width: 100%; height: 100%;
+	margin: 0px; padding: 0px;
+	display: grid; place-items: center;
+	background: var(--background);
+}
+*{scrollbar-width: auto; scrollbar-color: var(--primarycolor) transparent; box-sizing: border-box;}
+*::-webkit-scrollbar{width: 3px; background: transparent;}
+*::-webkit-scrollbar-track{background: transparent;}
+*::-webkit-scrollbar-thumb{background-color: var(--primarycolor); border-radius: 10px; border: 2px solid transparent;}
+*::-webkit-scrollbar-corner{background:transparent;}
+*:hover{scrollbar-color: var(--maincolor) transparent;}
+*:hover::-webkit-scrollbar-thumb{background-color: var(--primarycolor);}
+main{
+	display: block;
+	width: 600px; height: 400px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background: var(--foreground);
+}
+.title{color: var(--textcolor)}
+.input{
+	padding: 1rem; box-sizing: border-box;
+	border-radius: 4rem;
+	background: var(--background);
+	color: var(--textcolor);
+	border: none;
+	font-weight: bold;
+}
+.input:focus{outline: none;}
+.button{
+	padding: .5rem 1rem;
+	border: none;
+	border-radius: 4rem;
+	background: var(--primarycolor);
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transition: all .3s;
+}
+.button:hover{
+	cursor: pointer;
+	background: var(--secondarycolor);
+	box-shadow: rgba(0, 0, 0, 0.30) 0px 4px 10px;
+}

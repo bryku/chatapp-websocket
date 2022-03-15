@@ -1,0 +1,19 @@
+#page-signin{
+	width: 100%; height: 100%;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 300px 1fr;
+}
+#page-signin > *:nth-child(1){
+	border-right: 1px solid var(--background);
+	background-image: url('../../img/background.png');
+	background-size: cover;
+	background-position: center;
+}
+#page-signin > *:nth-child(2){
+	padding: 1rem;
+	display:grid;
+	grid-template-rows: 60px 60px 60px;
+	grid-template-columns: 1fr;
+	text-align: center;
+}
