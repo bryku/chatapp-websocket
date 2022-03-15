@@ -13,11 +13,6 @@ var messages = [];
 	app.use(express.json());
 	app.use(express.urlencoded({extended: true}));
 	app.use(cookieParser());
-	//index.html
-	//	-> style.css
-	// websit.com/css/asdfasdf.css -> website.com/public/css/asdfasdf.css
-	// bryku.com/img/10gfjwlkk.jpeg
-	// bryku.com/image/10gfjwlkk.jpeg
 	app.use('/css',       express.static(__dirname + '/public/css'));
 	app.use('/js',        express.static(__dirname + '/public/js'));
 	app.use('/img',       express.static(__dirname + '/public/img'));
